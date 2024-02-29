@@ -14,6 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class ComponentFilterAppConfigTest {
 
     @Test
+
     void filterScan(){
         AnnotationConfigApplicationContext ac =
                 new AnnotationConfigApplicationContext(ComponentFilterAppConfig.class);

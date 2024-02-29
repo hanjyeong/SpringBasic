@@ -1,11 +1,14 @@
 package hello.core.member;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@Component // 빈 등록 대상
+@Component // memoryMemberRepository
+@Qualifier("memorymemberRepository")
 public class MemoryMemberRepository implements MemberRepository{
 
     // MemberRepository의 구현체
